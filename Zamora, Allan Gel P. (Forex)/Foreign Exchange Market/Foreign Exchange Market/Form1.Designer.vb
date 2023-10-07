@@ -28,6 +28,10 @@ Partial Class Form1
         Me.txtTo = New System.Windows.Forms.TextBox()
         Me.cbTo = New System.Windows.Forms.ComboBox()
         Me.btnConvert = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cbFrom
@@ -35,6 +39,7 @@ Partial Class Form1
         Me.cbFrom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbFrom.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbFrom.FormattingEnabled = True
+        Me.cbFrom.Items.AddRange(New Object() {"USD", "HKD", "CAD", "INR", "SLR", "AED", "PHP", "GBP", "JPY", "EUR"})
         Me.cbFrom.Location = New System.Drawing.Point(59, 129)
         Me.cbFrom.Name = "cbFrom"
         Me.cbFrom.Size = New System.Drawing.Size(186, 31)
@@ -50,7 +55,8 @@ Partial Class Form1
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(152, 237)
+        Me.btnReset.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.Location = New System.Drawing.Point(152, 220)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(93, 39)
         Me.btnReset.TabIndex = 3
@@ -70,6 +76,7 @@ Partial Class Form1
         Me.cbTo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbTo.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbTo.FormattingEnabled = True
+        Me.cbTo.Items.AddRange(New Object() {"USD", "HKD", "CAD", "INR", "SLR", "AED", "PHP", "GBP", "JPY", "EUR"})
         Me.cbTo.Location = New System.Drawing.Point(59, 383)
         Me.cbTo.Name = "cbTo"
         Me.cbTo.Size = New System.Drawing.Size(186, 31)
@@ -77,12 +84,29 @@ Partial Class Form1
         '
         'btnConvert
         '
-        Me.btnConvert.Location = New System.Drawing.Point(59, 237)
+        Me.btnConvert.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConvert.Location = New System.Drawing.Point(59, 220)
         Me.btnConvert.Name = "btnConvert"
         Me.btnConvert.Size = New System.Drawing.Size(93, 39)
         Me.btnConvert.TabIndex = 6
         Me.btnConvert.Text = "Convert"
         Me.btnConvert.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(59, 23)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(186, 100)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(59, 277)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(186, 100)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
         '
         'Form1
         '
@@ -90,6 +114,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(228, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(302, 482)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.txtTo)
         Me.Controls.Add(Me.cbTo)
@@ -102,6 +128,8 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Forex"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -113,4 +141,6 @@ Partial Class Form1
     Friend WithEvents txtTo As TextBox
     Friend WithEvents cbTo As ComboBox
     Friend WithEvents btnConvert As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

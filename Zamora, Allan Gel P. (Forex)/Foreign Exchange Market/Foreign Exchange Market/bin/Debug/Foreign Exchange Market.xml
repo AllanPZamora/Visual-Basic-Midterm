@@ -22,5 +22,15 @@ Foreign Exchange Market
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Foreign_Exchange_Market.My.Resources.Resources.convert">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Foreign_Exchange_Market.My.Resources.Resources.money">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
