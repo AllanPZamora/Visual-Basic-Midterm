@@ -28,10 +28,10 @@ Partial Class Form1
         Me.txtTo = New System.Windows.Forms.TextBox()
         Me.cbTo = New System.Windows.Forms.ComboBox()
         Me.btnConvert = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pbFrom = New System.Windows.Forms.PictureBox()
+        Me.pbTo = New System.Windows.Forms.PictureBox()
+        CType(Me.pbFrom, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbTo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cbFrom
@@ -65,6 +65,7 @@ Partial Class Form1
         '
         'txtTo
         '
+        Me.txtTo.Enabled = False
         Me.txtTo.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold)
         Me.txtTo.Location = New System.Drawing.Point(59, 420)
         Me.txtTo.Name = "txtTo"
@@ -92,21 +93,23 @@ Partial Class Form1
         Me.btnConvert.Text = "Convert"
         Me.btnConvert.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'pbFrom
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(59, 23)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(186, 100)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.pbFrom.Location = New System.Drawing.Point(59, 23)
+        Me.pbFrom.Name = "pbFrom"
+        Me.pbFrom.Size = New System.Drawing.Size(186, 100)
+        Me.pbFrom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbFrom.TabIndex = 7
+        Me.pbFrom.TabStop = False
         '
-        'PictureBox2
+        'pbTo
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(59, 277)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(186, 100)
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
+        Me.pbTo.Location = New System.Drawing.Point(59, 277)
+        Me.pbTo.Name = "pbTo"
+        Me.pbTo.Size = New System.Drawing.Size(186, 100)
+        Me.pbTo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pbTo.TabIndex = 8
+        Me.pbTo.TabStop = False
         '
         'Form1
         '
@@ -114,8 +117,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(228, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(302, 482)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbTo)
+        Me.Controls.Add(Me.pbFrom)
         Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.txtTo)
         Me.Controls.Add(Me.cbTo)
@@ -128,8 +131,8 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Forex"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbFrom, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbTo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,6 +144,6 @@ Partial Class Form1
     Friend WithEvents txtTo As TextBox
     Friend WithEvents cbTo As ComboBox
     Friend WithEvents btnConvert As Button
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents pbFrom As PictureBox
+    Friend WithEvents pbTo As PictureBox
 End Class
