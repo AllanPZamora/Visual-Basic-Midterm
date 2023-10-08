@@ -1,12 +1,11 @@
 ﻿Public Class Form1
     Private Sub cbFrom_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbFrom.SelectedIndexChanged
         Dim imageResources() As Image = {My.Resources._0us, My.Resources._1hk, My.Resources._2ca, My.Resources._3in, My.Resources._4lk, My.Resources._5ae, My.Resources._6ph, My.Resources._7gb, My.Resources._8jp, My.Resources._9eu}
-        Dim currencySymbols() As String = {"$", "HK$", "C$", "₹", "SLR", "AED", "₱", "£", "¥", "€"} ' Add currency symbols in the same order as your ComboBox items
+        Dim currencySymbols() As String = {"$", "HK$", "C$", "₹", "SLR", "AED", "₱", "£", "¥", "€"}
 
         If cbFrom.SelectedIndex >= 0 AndAlso cbFrom.SelectedIndex < imageResources.Length Then
             pbFrom.Image = imageResources(cbFrom.SelectedIndex)
 
-            ' Update the currency symbol label
             If cbFrom.SelectedIndex >= 0 AndAlso cbFrom.SelectedIndex < currencySymbols.Length Then
                 naol1.Text = currencySymbols(cbFrom.SelectedIndex)
             End If
@@ -14,12 +13,11 @@
     End Sub
     Private Sub cbTo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbTo.SelectedIndexChanged
         Dim imageResources() As Image = {My.Resources._0us, My.Resources._1hk, My.Resources._2ca, My.Resources._3in, My.Resources._4lk, My.Resources._5ae, My.Resources._6ph, My.Resources._7gb, My.Resources._8jp, My.Resources._9eu}
-        Dim currencySymbols() As String = {"$", "HK$", "C$", "₹", "SLR", "AED", "₱", "£", "¥", "€"} ' Add currency symbols in the same order as your ComboBox items
+        Dim currencySymbols() As String = {"$", "HK$", "C$", "₹", "SLR", "AED", "₱", "£", "¥", "€"}
 
         If cbTo.SelectedIndex >= 0 AndAlso cbTo.SelectedIndex < imageResources.Length Then
             pbTo.Image = imageResources(cbTo.SelectedIndex)
 
-            ' Update the currency symbol label (naol2 in this case)
             If cbTo.SelectedIndex >= 0 AndAlso cbTo.SelectedIndex < currencySymbols.Length Then
                 naol2.Text = currencySymbols(cbTo.SelectedIndex)
             End If
