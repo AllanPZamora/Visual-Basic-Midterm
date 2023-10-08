@@ -30,6 +30,8 @@ Partial Class Form1
         Me.btnConvert = New System.Windows.Forms.Button()
         Me.pbFrom = New System.Windows.Forms.PictureBox()
         Me.pbTo = New System.Windows.Forms.PictureBox()
+        Me.naol1 = New System.Windows.Forms.Label()
+        Me.naol2 = New System.Windows.Forms.Label()
         CType(Me.pbFrom, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbTo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,13 +57,18 @@ Partial Class Form1
         '
         'btnReset
         '
+        Me.btnReset.BackColor = System.Drawing.Color.Red
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red
+        Me.btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnReset.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.Location = New System.Drawing.Point(152, 220)
+        Me.btnReset.Location = New System.Drawing.Point(158, 220)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(93, 39)
+        Me.btnReset.Size = New System.Drawing.Size(87, 39)
         Me.btnReset.TabIndex = 3
         Me.btnReset.Text = "Reset"
-        Me.btnReset.UseVisualStyleBackColor = True
+        Me.btnReset.UseVisualStyleBackColor = False
         '
         'txtTo
         '
@@ -85,13 +92,18 @@ Partial Class Form1
         '
         'btnConvert
         '
+        Me.btnConvert.BackColor = System.Drawing.Color.Lime
+        Me.btnConvert.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnConvert.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime
+        Me.btnConvert.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime
+        Me.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnConvert.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConvert.Location = New System.Drawing.Point(59, 220)
         Me.btnConvert.Name = "btnConvert"
         Me.btnConvert.Size = New System.Drawing.Size(93, 39)
         Me.btnConvert.TabIndex = 6
         Me.btnConvert.Text = "Convert"
-        Me.btnConvert.UseVisualStyleBackColor = True
+        Me.btnConvert.UseVisualStyleBackColor = False
         '
         'pbFrom
         '
@@ -111,12 +123,32 @@ Partial Class Form1
         Me.pbTo.TabIndex = 8
         Me.pbTo.TabStop = False
         '
+        'naol1
+        '
+        Me.naol1.AutoSize = True
+        Me.naol1.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.naol1.Location = New System.Drawing.Point(12, 169)
+        Me.naol1.Name = "naol1"
+        Me.naol1.Size = New System.Drawing.Size(0, 23)
+        Me.naol1.TabIndex = 9
+        '
+        'naol2
+        '
+        Me.naol2.AutoSize = True
+        Me.naol2.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.naol2.Location = New System.Drawing.Point(12, 423)
+        Me.naol2.Name = "naol2"
+        Me.naol2.Size = New System.Drawing.Size(0, 23)
+        Me.naol2.TabIndex = 10
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(145, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(228, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(302, 482)
+        Me.Controls.Add(Me.naol2)
+        Me.Controls.Add(Me.naol1)
         Me.Controls.Add(Me.pbTo)
         Me.Controls.Add(Me.pbFrom)
         Me.Controls.Add(Me.btnConvert)
@@ -146,4 +178,6 @@ Partial Class Form1
     Friend WithEvents btnConvert As Button
     Friend WithEvents pbFrom As PictureBox
     Friend WithEvents pbTo As PictureBox
+    Friend WithEvents naol1 As Label
+    Friend WithEvents naol2 As Label
 End Class
