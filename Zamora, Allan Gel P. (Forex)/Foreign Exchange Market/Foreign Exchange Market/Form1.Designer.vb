@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.cbFrom = New System.Windows.Forms.ComboBox()
         Me.txtFrom = New System.Windows.Forms.TextBox()
         Me.btnReset = New System.Windows.Forms.Button()
@@ -158,6 +159,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtFrom)
         Me.Controls.Add(Me.cbFrom)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
