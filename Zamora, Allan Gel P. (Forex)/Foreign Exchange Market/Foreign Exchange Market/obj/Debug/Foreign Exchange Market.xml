@@ -82,10 +82,5 @@ Foreign Exchange Market
   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
 </summary>
 </member>
-<member name="P:Foreign_Exchange_Market.My.Resources.Resources.money">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 </members>
 </doc>

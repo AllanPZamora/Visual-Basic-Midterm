@@ -26,9 +26,11 @@
     Private Sub btnConvert_Click(sender As Object, e As EventArgs) Handles btnConvert.Click
         If cbFrom.SelectedIndex = -1 Then
             MsgBox("Please select the source currency")
+            txtFrom.Text = ""
             Return
         ElseIf cbTo.SelectedIndex = -1 Then
             MsgBox("Please select the target currency")
+            txtFrom.Text = ""
             Return
         ElseIf cbFrom.SelectedIndex = cbTo.SelectedIndex Then
             MsgBox("Don't use the same currency")
@@ -36,250 +38,31 @@
             Return
         End If
 
+        Dim selectedindex As Integer = cbFrom.SelectedIndex
+        Dim selectedindex2 As Integer = cbTo.SelectedIndex
         Dim amount As Double
-
-        If Double.TryParse(txtFrom.Text, amount) Then
-            Dim selectedindex As Integer = cbFrom.SelectedIndex
-            Dim selectedindex2 As Integer = cbTo.SelectedIndex
             Dim res As Double
-            Select Case selectedindex
-                Case 0
-                    Select Case selectedindex2
-                        Case 1
-                            res = amount * 7.83
-                        Case 2
-                            res = amount * 1.37
-                        Case 3
-                            res = amount * 83.12
-                        Case 4
-                            res = amount * 322.66
-                        Case 5
-                            res = amount * 3.67
-                        Case 6
-                            res = amount * 56.7
-                        Case 7
-                            res = amount * 0.82
-                        Case 8
-                            res = amount * 149.22
-                        Case 9
-                            res = amount * 0.94
-                    End Select
 
-                Case 1
+            Dim conversionFactors(,) As Double = {
+                {0, 7.83, 1.37, 83.12, 322.66, 3.67, 56.7, 0.82, 149.22, 0.94},
+                {0.13, 0, 0.17, 10.61, 41.2, 0.47, 7.24, 0.1, 19.05, 0.12},
+                {0.73, 5.73, 0, 60.92, 236.75, 2.69, 41.65, 0.6, 109.12, 0.7},
+                {0.012, 0.094, 0.016, 0, 3.88, 0.044, 0.0098, 0.68, 1.8, 0.11},
+                {0.0031, 0.024, 0.0042, 0.26, 0, 0.011, 0.18, 0.0025, 0.46, 0.0029},
+                {0.27, 2.13, 0.37, 22.13, 87.85, 0, 15.44, 0.22, 40.63, 0.26},
+                {0.018, 0.14, 0.024, 1.47, 5.69, 0.065, 0, 0.014, 2.63, 0.017},
+                {1.22, 9.59, 1.66, 101.74, 394.94, 4.5, 69.4, 0, 182.67, 1.15},
+                {0.0067, 0.052, 0.0092, 0.56, 2.16, 0.025, 0.38, 0.0055, 0, 0.0063},
+                {1.06, 8.3, 1.44, 87.67, 340.68, 3.87, 59.96, 0.87, 157.07, 0}
+            }
 
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.13
-                        Case 2
-                            res = amount * 0.17
-                        Case 3
-                            res = amount * 10.61
-                        Case 4
-                            res = amount * 41.2
-                        Case 5
-                            res = amount * 0.47
-                        Case 6
-                            res = amount * 7.24
-                        Case 7
-                            res = amount * 0.1
-                        Case 8
-                            res = amount * 19.05
-                        Case 9
-                            res = amount * 0.12
-                    End Select
-
-                Case 2
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.73
-                        Case 1
-                            res = amount * 5.72
-                        Case 3
-                            res = amount * 60.74
-                        Case 4
-                            res = amount * 235.8
-                        Case 5
-                            res = amount * 2.68
-                        Case 6
-                            res = amount * 41.44
-                        Case 7
-                            res = amount * 0.6
-                        Case 8
-                            res = amount * 109.05
-                        Case 9
-                            res = amount * 0.69
-
-                    End Select
-
-                Case 3
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.012
-                        Case 1
-                            res = amount * 0.094
-                        Case 2
-                            res = amount * 0.26
-                        Case 4
-                            res = amount * 3.88
-                        Case 5
-                            res = amount * 0.044
-                        Case 6
-                            res = amount * 0.68
-                        Case 7
-                            res = amount * 0.0098
-                        Case 8
-                            res = amount * 1.8
-                        Case 9
-                            res = amount * 0.011
-                    End Select
-
-                Case 4
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.0031
-                        Case 1
-                            res = amount * 0.024
-                        Case 2
-                            res = amount * 0.0042
-                        Case 3
-                            res = amount * 0.26
-                        Case 5
-                            res = amount * 0.011
-                        Case 6
-                            res = amount * 0.18
-                        Case 7
-                            res = amount * 0.0025
-                        Case 8
-                            res = amount * 0.46
-                        Case 9
-                            res = amount * 0.0029
-                    End Select
-
-                Case 5
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.27
-                        Case 1
-                            res = amount * 2.13
-                        Case 2
-                            res = amount * 0.37
-                        Case 3
-                            res = amount * 22.63
-                        Case 4
-                            res = amount * 87.85
-                        Case 6
-                            res = amount * 15.44
-                        Case 7
-                            res = amount * 0.22
-                        Case 8
-                            res = amount * 40.63
-                        Case 9
-                            res = amount * 0.26
-                    End Select
-
-                Case 6
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.018
-                        Case 1
-                            res = amount * 0.14
-                        Case 2
-                            res = amount * 0.024
-                        Case 3
-                            res = amount * 1.47
-                        Case 4
-                            res = amount * 5.69
-                        Case 5
-                            res = amount * 0.065
-                        Case 7
-                            res = amount * 0.014
-                        Case 8
-                            res = amount * 2.63
-                        Case 9
-                            res = amount * 0.017
-                    End Select
-
-                Case 7
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 1.22
-                        Case 1
-                            res = amount * 9.59
-                        Case 2
-                            res = amount * 1.67
-                        Case 3
-                            res = amount * 101.74
-                        Case 4
-                            res = amount * 394.94
-                        Case 5
-                            res = amount * 4.5
-                        Case 6
-                            res = amount * 69.4
-                        Case 8
-                            res = amount * 183.06
-                        Case 9
-                            res = amount * 1.15
-                    End Select
-
-                Case 8
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 0.0067
-                        Case 1
-                            res = amount * 0.052
-                        Case 2
-                            res = amount * 0.0092
-                        Case 3
-                            res = amount * 0.56
-                        Case 4
-                            res = amount * 2.16
-                        Case 5
-                            res = amount * 0.025
-                        Case 6
-                            res = amount * 0.38
-                        Case 7
-                            res = amount * 0.0055
-                        Case 9
-                            res = amount * 0.0063
-                    End Select
-
-                Case 9
-
-                    Select Case selectedindex2
-                        Case 0
-                            res = amount * 1.06
-                        Case 1
-                            res = amount * 8.29
-                        Case 2
-                            res = amount * 1.45
-                        Case 3
-                            res = amount * 88.12
-                        Case 4
-                            res = amount * 342.07
-                        Case 5
-                            res = amount * 3.89
-                        Case 6
-                            res = amount * 60.11
-                        Case 7
-                            res = amount * 0.87
-                        Case 8
-                            res = amount * 158.2
-                    End Select
-
-            End Select
-
+            Try
+            amount = Double.Parse(txtFrom.Text)
+            res = amount * conversionFactors(selectedindex, selectedindex2)
             txtTo.Text = res.ToString("0.00")
-        Else
-            MsgBox("Invalid Amount")
-            txtFrom.Text = ""
-        End If
+        Catch ex As Exception
+                MsgBox("Enter a valid amount")
+            End Try
     End Sub
     Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
 
