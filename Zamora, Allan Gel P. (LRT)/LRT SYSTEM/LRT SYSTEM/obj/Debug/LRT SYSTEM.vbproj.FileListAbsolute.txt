@@ -11,3 +11,16 @@ C:\Users\CL1 PC.CL1PC07\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\
 C:\Users\CL1 PC.CL1PC07\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.exe
 C:\Users\CL1 PC.CL1PC07\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.xml
 C:\Users\CL1 PC.CL1PC07\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.pdb
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\bin\Debug\LRT SYSTEM.exe.config
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\bin\Debug\LRT SYSTEM.exe
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\bin\Debug\LRT SYSTEM.pdb
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\bin\Debug\LRT SYSTEM.xml
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.vbproj.AssemblyReference.cache
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT_SYSTEM.Form1.resources
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT_SYSTEM.Resources.resources
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.vbproj.GenerateResource.cache
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.vbproj.CoreCompileInputs.cache
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.exe
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.xml
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT SYSTEM.pdb
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (LRT)\LRT SYSTEM\LRT SYSTEM\obj\Debug\LRT_SYSTEM.Form2.resources
