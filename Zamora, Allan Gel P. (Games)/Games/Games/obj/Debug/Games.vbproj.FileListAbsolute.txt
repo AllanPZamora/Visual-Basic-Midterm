@@ -9,3 +9,5 @@ C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\G
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.exe
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.xml
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.pdb
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.Main.resources
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.Welcome.resources
