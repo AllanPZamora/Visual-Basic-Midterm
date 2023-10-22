@@ -25,26 +25,59 @@ Partial Class Main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.BackPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.BackPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'BackPanel
         '
         Me.BackPanel.Controls.Add(Me.Label1)
-        Me.BackPanel.Location = New System.Drawing.Point(0, 0)
+        Me.BackPanel.Location = New System.Drawing.Point(-5, -4)
         Me.BackPanel.Name = "BackPanel"
-        Me.BackPanel.Size = New System.Drawing.Size(747, 64)
+        Me.BackPanel.Size = New System.Drawing.Size(752, 68)
         Me.BackPanel.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(39, 23)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(59, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(146, 39)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "BetStation"
+        '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(110, 136)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(124, 123)
+        Me.Panel1.TabIndex = 1
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(240, 136)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(124, 123)
+        Me.Panel2.TabIndex = 2
+        '
+        'Panel3
+        '
+        Me.Panel3.Location = New System.Drawing.Point(370, 136)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(124, 123)
+        Me.Panel3.TabIndex = 2
+        '
+        'Panel4
+        '
+        Me.Panel4.Location = New System.Drawing.Point(500, 136)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(124, 123)
+        Me.Panel4.TabIndex = 3
         '
         'Main
         '
@@ -52,6 +85,10 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(744, 411)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.BackPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Main"
@@ -65,4 +102,8 @@ Partial Class Main
 
     Friend WithEvents BackPanel As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
 End Class

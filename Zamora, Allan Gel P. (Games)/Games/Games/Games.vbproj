@@ -130,9 +130,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\back.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\backgame.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
