@@ -24,6 +24,9 @@ Partial Class Main
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.BackPanel = New System.Windows.Forms.Panel()
+        Me.MainBalance = New System.Windows.Forms.Label()
+        Me.PBMoney = New System.Windows.Forms.PictureBox()
+        Me.PBLogo = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.game1 = New System.Windows.Forms.Panel()
         Me.LBToss = New System.Windows.Forms.Label()
@@ -38,6 +41,8 @@ Partial Class Main
         Me.LBL9 = New System.Windows.Forms.Label()
         Me.PBL9 = New System.Windows.Forms.PictureBox()
         Me.BackPanel.SuspendLayout()
+        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.game1.SuspendLayout()
         CType(Me.PBToss, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.game2.SuspendLayout()
@@ -50,11 +55,44 @@ Partial Class Main
         '
         'BackPanel
         '
+        Me.BackPanel.Controls.Add(Me.MainBalance)
+        Me.BackPanel.Controls.Add(Me.PBMoney)
+        Me.BackPanel.Controls.Add(Me.PBLogo)
         Me.BackPanel.Controls.Add(Me.Label1)
         Me.BackPanel.Location = New System.Drawing.Point(-5, -4)
         Me.BackPanel.Name = "BackPanel"
         Me.BackPanel.Size = New System.Drawing.Size(752, 68)
         Me.BackPanel.TabIndex = 0
+        '
+        'MainBalance
+        '
+        Me.MainBalance.AutoSize = True
+        Me.MainBalance.BackColor = System.Drawing.Color.Transparent
+        Me.MainBalance.Font = New System.Drawing.Font("Bahnschrift", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainBalance.Location = New System.Drawing.Point(622, 27)
+        Me.MainBalance.Name = "MainBalance"
+        Me.MainBalance.Size = New System.Drawing.Size(0, 23)
+        Me.MainBalance.TabIndex = 5
+        '
+        'PBMoney
+        '
+        Me.PBMoney.BackColor = System.Drawing.Color.Transparent
+        Me.PBMoney.Location = New System.Drawing.Point(569, 13)
+        Me.PBMoney.Name = "PBMoney"
+        Me.PBMoney.Size = New System.Drawing.Size(47, 47)
+        Me.PBMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBMoney.TabIndex = 4
+        Me.PBMoney.TabStop = False
+        '
+        'PBLogo
+        '
+        Me.PBLogo.BackColor = System.Drawing.Color.Transparent
+        Me.PBLogo.Location = New System.Drawing.Point(13, 13)
+        Me.PBLogo.Name = "PBLogo"
+        Me.PBLogo.Size = New System.Drawing.Size(47, 47)
+        Me.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBLogo.TabIndex = 1
+        Me.PBLogo.TabStop = False
         '
         'Label1
         '
@@ -80,7 +118,7 @@ Partial Class Main
         '
         Me.LBToss.AutoSize = True
         Me.LBToss.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBToss.Location = New System.Drawing.Point(24, 123)
+        Me.LBToss.Location = New System.Drawing.Point(26, 123)
         Me.LBToss.Name = "LBToss"
         Me.LBToss.Size = New System.Drawing.Size(101, 25)
         Me.LBToss.TabIndex = 1
@@ -108,7 +146,7 @@ Partial Class Main
         '
         Me.PBJaken.AutoSize = True
         Me.PBJaken.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PBJaken.Location = New System.Drawing.Point(13, 123)
+        Me.PBJaken.Location = New System.Drawing.Point(14, 123)
         Me.PBJaken.Name = "PBJaken"
         Me.PBJaken.Size = New System.Drawing.Size(125, 25)
         Me.PBJaken.TabIndex = 2
@@ -136,7 +174,7 @@ Partial Class Main
         '
         Me.LBSlots.AutoSize = True
         Me.LBSlots.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBSlots.Location = New System.Drawing.Point(11, 123)
+        Me.LBSlots.Location = New System.Drawing.Point(12, 123)
         Me.LBSlots.Name = "LBSlots"
         Me.LBSlots.Size = New System.Drawing.Size(132, 25)
         Me.LBSlots.TabIndex = 3
@@ -164,7 +202,7 @@ Partial Class Main
         '
         Me.LBL9.AutoSize = True
         Me.LBL9.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBL9.Location = New System.Drawing.Point(17, 123)
+        Me.LBL9.Location = New System.Drawing.Point(19, 123)
         Me.LBL9.Name = "LBL9"
         Me.LBL9.Size = New System.Drawing.Size(116, 25)
         Me.LBL9.TabIndex = 5
@@ -196,6 +234,8 @@ Partial Class Main
         Me.Text = "Main"
         Me.BackPanel.ResumeLayout(False)
         Me.BackPanel.PerformLayout()
+        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.game1.ResumeLayout(False)
         Me.game1.PerformLayout()
         CType(Me.PBToss, System.ComponentModel.ISupportInitialize).EndInit()
@@ -226,4 +266,7 @@ Partial Class Main
     Friend WithEvents PBJaken As Label
     Friend WithEvents LBSlots As Label
     Friend WithEvents LBL9 As Label
+    Friend WithEvents PBLogo As PictureBox
+    Friend WithEvents MainBalance As Label
+    Friend WithEvents PBMoney As PictureBox
 End Class
