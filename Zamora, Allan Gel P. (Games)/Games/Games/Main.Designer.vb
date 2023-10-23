@@ -25,11 +25,27 @@ Partial Class Main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.BackPanel = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.game1 = New System.Windows.Forms.Panel()
+        Me.LBToss = New System.Windows.Forms.Label()
+        Me.PBToss = New System.Windows.Forms.PictureBox()
+        Me.game2 = New System.Windows.Forms.Panel()
+        Me.PBJaken = New System.Windows.Forms.Label()
+        Me.PBJacken = New System.Windows.Forms.PictureBox()
+        Me.game3 = New System.Windows.Forms.Panel()
+        Me.LBSlots = New System.Windows.Forms.Label()
+        Me.PBSlots = New System.Windows.Forms.PictureBox()
+        Me.game4 = New System.Windows.Forms.Panel()
+        Me.LBL9 = New System.Windows.Forms.Label()
+        Me.PBL9 = New System.Windows.Forms.PictureBox()
         Me.BackPanel.SuspendLayout()
+        Me.game1.SuspendLayout()
+        CType(Me.PBToss, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.game2.SuspendLayout()
+        CType(Me.PBJacken, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.game3.SuspendLayout()
+        CType(Me.PBSlots, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.game4.SuspendLayout()
+        CType(Me.PBL9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BackPanel
@@ -51,33 +67,117 @@ Partial Class Main
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "BetStation"
         '
-        'Panel1
+        'game1
         '
-        Me.Panel1.Location = New System.Drawing.Point(110, 136)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(124, 123)
-        Me.Panel1.TabIndex = 1
+        Me.game1.Controls.Add(Me.LBToss)
+        Me.game1.Controls.Add(Me.PBToss)
+        Me.game1.Location = New System.Drawing.Point(50, 149)
+        Me.game1.Name = "game1"
+        Me.game1.Size = New System.Drawing.Size(152, 162)
+        Me.game1.TabIndex = 1
         '
-        'Panel2
+        'LBToss
         '
-        Me.Panel2.Location = New System.Drawing.Point(240, 136)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(124, 123)
-        Me.Panel2.TabIndex = 2
+        Me.LBToss.AutoSize = True
+        Me.LBToss.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBToss.Location = New System.Drawing.Point(24, 123)
+        Me.LBToss.Name = "LBToss"
+        Me.LBToss.Size = New System.Drawing.Size(101, 25)
+        Me.LBToss.TabIndex = 1
+        Me.LBToss.Text = "Toss Coin"
         '
-        'Panel3
+        'PBToss
         '
-        Me.Panel3.Location = New System.Drawing.Point(370, 136)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(124, 123)
-        Me.Panel3.TabIndex = 2
+        Me.PBToss.Location = New System.Drawing.Point(25, 25)
+        Me.PBToss.Name = "PBToss"
+        Me.PBToss.Size = New System.Drawing.Size(100, 90)
+        Me.PBToss.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBToss.TabIndex = 0
+        Me.PBToss.TabStop = False
         '
-        'Panel4
+        'game2
         '
-        Me.Panel4.Location = New System.Drawing.Point(500, 136)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(124, 123)
-        Me.Panel4.TabIndex = 3
+        Me.game2.Controls.Add(Me.PBJaken)
+        Me.game2.Controls.Add(Me.PBJacken)
+        Me.game2.Location = New System.Drawing.Point(215, 149)
+        Me.game2.Name = "game2"
+        Me.game2.Size = New System.Drawing.Size(152, 162)
+        Me.game2.TabIndex = 2
+        '
+        'PBJaken
+        '
+        Me.PBJaken.AutoSize = True
+        Me.PBJaken.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PBJaken.Location = New System.Drawing.Point(13, 123)
+        Me.PBJaken.Name = "PBJaken"
+        Me.PBJaken.Size = New System.Drawing.Size(125, 25)
+        Me.PBJaken.TabIndex = 2
+        Me.PBJaken.Text = "Jack En Poy"
+        '
+        'PBJacken
+        '
+        Me.PBJacken.Location = New System.Drawing.Point(25, 25)
+        Me.PBJacken.Name = "PBJacken"
+        Me.PBJacken.Size = New System.Drawing.Size(100, 90)
+        Me.PBJacken.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBJacken.TabIndex = 1
+        Me.PBJacken.TabStop = False
+        '
+        'game3
+        '
+        Me.game3.Controls.Add(Me.LBSlots)
+        Me.game3.Controls.Add(Me.PBSlots)
+        Me.game3.Location = New System.Drawing.Point(382, 149)
+        Me.game3.Name = "game3"
+        Me.game3.Size = New System.Drawing.Size(152, 162)
+        Me.game3.TabIndex = 2
+        '
+        'LBSlots
+        '
+        Me.LBSlots.AutoSize = True
+        Me.LBSlots.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBSlots.Location = New System.Drawing.Point(11, 123)
+        Me.LBSlots.Name = "LBSlots"
+        Me.LBSlots.Size = New System.Drawing.Size(132, 25)
+        Me.LBSlots.TabIndex = 3
+        Me.LBSlots.Text = "Slot Machine"
+        '
+        'PBSlots
+        '
+        Me.PBSlots.Location = New System.Drawing.Point(25, 25)
+        Me.PBSlots.Name = "PBSlots"
+        Me.PBSlots.Size = New System.Drawing.Size(100, 90)
+        Me.PBSlots.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBSlots.TabIndex = 2
+        Me.PBSlots.TabStop = False
+        '
+        'game4
+        '
+        Me.game4.Controls.Add(Me.LBL9)
+        Me.game4.Controls.Add(Me.PBL9)
+        Me.game4.Location = New System.Drawing.Point(550, 149)
+        Me.game4.Name = "game4"
+        Me.game4.Size = New System.Drawing.Size(152, 162)
+        Me.game4.TabIndex = 3
+        '
+        'LBL9
+        '
+        Me.LBL9.AutoSize = True
+        Me.LBL9.Font = New System.Drawing.Font("Bahnschrift Light", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBL9.Location = New System.Drawing.Point(17, 123)
+        Me.LBL9.Name = "LBL9"
+        Me.LBL9.Size = New System.Drawing.Size(116, 25)
+        Me.LBL9.TabIndex = 5
+        Me.LBL9.Text = "Lucky Nine"
+        '
+        'PBL9
+        '
+        Me.PBL9.Location = New System.Drawing.Point(25, 25)
+        Me.PBL9.Name = "PBL9"
+        Me.PBL9.Size = New System.Drawing.Size(100, 90)
+        Me.PBL9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBL9.TabIndex = 4
+        Me.PBL9.TabStop = False
         '
         'Main
         '
@@ -85,10 +185,10 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(744, 411)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.game4)
+        Me.Controls.Add(Me.game3)
+        Me.Controls.Add(Me.game2)
+        Me.Controls.Add(Me.game1)
         Me.Controls.Add(Me.BackPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Main"
@@ -96,14 +196,34 @@ Partial Class Main
         Me.Text = "Main"
         Me.BackPanel.ResumeLayout(False)
         Me.BackPanel.PerformLayout()
+        Me.game1.ResumeLayout(False)
+        Me.game1.PerformLayout()
+        CType(Me.PBToss, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.game2.ResumeLayout(False)
+        Me.game2.PerformLayout()
+        CType(Me.PBJacken, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.game3.ResumeLayout(False)
+        Me.game3.PerformLayout()
+        CType(Me.PBSlots, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.game4.ResumeLayout(False)
+        Me.game4.PerformLayout()
+        CType(Me.PBL9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents BackPanel As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents game1 As Panel
+    Friend WithEvents game2 As Panel
+    Friend WithEvents game3 As Panel
+    Friend WithEvents game4 As Panel
+    Friend WithEvents PBToss As PictureBox
+    Friend WithEvents PBJacken As PictureBox
+    Friend WithEvents PBSlots As PictureBox
+    Friend WithEvents PBL9 As PictureBox
+    Friend WithEvents LBToss As Label
+    Friend WithEvents PBJaken As Label
+    Friend WithEvents LBSlots As Label
+    Friend WithEvents LBL9 As Label
 End Class

@@ -132,5 +132,17 @@
   <ItemGroup>
     <None Include="Resources\backgame.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucky9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slotmachine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tosscion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jacken.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
