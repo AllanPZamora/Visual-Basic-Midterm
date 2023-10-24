@@ -229,6 +229,7 @@ Partial Class Main
         Me.Controls.Add(Me.game1)
         Me.Controls.Add(Me.BackPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"

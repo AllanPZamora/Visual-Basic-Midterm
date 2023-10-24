@@ -39,7 +39,7 @@ Partial Class Welcome
         'ProgLoad
         '
         Me.ProgLoad.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.ProgLoad.Location = New System.Drawing.Point(54, 181)
+        Me.ProgLoad.Location = New System.Drawing.Point(54, 171)
         Me.ProgLoad.Name = "ProgLoad"
         Me.ProgLoad.Size = New System.Drawing.Size(400, 23)
         Me.ProgLoad.TabIndex = 0
@@ -55,9 +55,9 @@ Partial Class Welcome
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 24.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(58, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 39)
+        Me.Label1.Size = New System.Drawing.Size(168, 39)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "BetStation V1"
+        Me.Label1.Text = "BetStationⱽ¹"
         '
         'Label2
         '
@@ -85,7 +85,7 @@ Partial Class Welcome
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(50, 137)
+        Me.Label3.Location = New System.Drawing.Point(50, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(88, 19)
         Me.Label3.TabIndex = 4
@@ -94,14 +94,14 @@ Partial Class Welcome
         'TxtInput
         '
         Me.TxtInput.Font = New System.Drawing.Font("Bahnschrift SemiBold", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.TxtInput.Location = New System.Drawing.Point(144, 134)
+        Me.TxtInput.Location = New System.Drawing.Point(144, 124)
         Me.TxtInput.Name = "TxtInput"
         Me.TxtInput.Size = New System.Drawing.Size(222, 27)
         Me.TxtInput.TabIndex = 5
         '
         'btnStart
         '
-        Me.btnStart.Location = New System.Drawing.Point(372, 134)
+        Me.btnStart.Location = New System.Drawing.Point(372, 124)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(82, 27)
         Me.btnStart.TabIndex = 6
@@ -113,7 +113,7 @@ Partial Class Welcome
         Me.Warning.AutoSize = True
         Me.Warning.BackColor = System.Drawing.Color.Transparent
         Me.Warning.Font = New System.Drawing.Font("Bahnschrift SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Warning.Location = New System.Drawing.Point(92, 212)
+        Me.Warning.Location = New System.Drawing.Point(92, 202)
         Me.Warning.Name = "Warning"
         Me.Warning.Size = New System.Drawing.Size(308, 19)
         Me.Warning.TabIndex = 7
@@ -124,18 +124,18 @@ Partial Class Welcome
         Me.LBload.AutoSize = True
         Me.LBload.BackColor = System.Drawing.Color.Transparent
         Me.LBload.Font = New System.Drawing.Font("Bahnschrift SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBload.Location = New System.Drawing.Point(50, 149)
+        Me.LBload.Location = New System.Drawing.Point(50, 139)
         Me.LBload.Name = "LBload"
-        Me.LBload.Size = New System.Drawing.Size(67, 19)
+        Me.LBload.Size = New System.Drawing.Size(79, 19)
         Me.LBload.TabIndex = 8
-        Me.LBload.Text = "Loading"
+        Me.LBload.Text = "Loading..."
         '
         'Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(143, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(500, 249)
+        Me.ClientSize = New System.Drawing.Size(500, 236)
         Me.Controls.Add(Me.LBload)
         Me.Controls.Add(Me.Warning)
         Me.Controls.Add(Me.btnStart)
