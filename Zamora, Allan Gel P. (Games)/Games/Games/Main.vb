@@ -13,11 +13,7 @@
     End Sub
 
     Private Sub Main_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        If closingConfirmed Then
-
-            Application.Exit()
-        Else
-
+        If Not closingConfirmed Then
             Dim result As DialogResult = MessageBox.Show("Are you sure you want to close the application?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
             If result = DialogResult.No Then
                 e.Cancel = True
@@ -30,8 +26,7 @@
 
 
     Private Sub Game1_Click(sender As Object, e As EventArgs) Handles PBToss.Click, LBToss.Click, game1.Click
-        Dim gameForm As New TossCoin()
-        gameForm.Show()
+        TossCoin.Show()
         Me.Hide()
     End Sub
 

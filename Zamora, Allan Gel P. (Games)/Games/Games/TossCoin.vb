@@ -28,8 +28,7 @@
             e.Cancel = True
         Else
 
-            Dim mainForm As New Main()
-            mainForm.Show()
+            Main.Show()
         End If
     End Sub
 End Class
