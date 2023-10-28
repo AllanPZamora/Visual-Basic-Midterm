@@ -32,6 +32,16 @@ Games
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Games.My.Resources.Resources.coin0">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Games.My.Resources.Resources.coin1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Games.My.Resources.Resources.jacken">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
