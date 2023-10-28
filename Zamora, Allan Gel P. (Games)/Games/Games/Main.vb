@@ -31,17 +31,17 @@
     End Sub
 
     'Private Sub Game2_Click(sender As Object, e As EventArgs) Handles PBJaken.Click, PBJacken.Click, game2.Click
-    '    TossCoin.Show()
+    '    Jacken.Show()
     '    Me.Hide()
     'End Sub
 
     'Private Sub Game3_Click(sender As Object, e As EventArgs) Handles PBSlots.Click, LBSlots.Click, game3.Click
-    '    TossCoin.Show()
+    '    Slots.Show()
     '    Me.Hide()
     'End Sub
 
     ''Private Sub Game4_Click(sender As Object, e As EventArgs) Handles PBL9.Click, LBL9.Click, game4.Click
-    ''TossCoin.Show()
+    ''Lucky9.Show()
     '' Me.Hide()
     ''End Sub
 
