@@ -27,7 +27,7 @@ Partial Class TossCoin
         Me.CBBet = New System.Windows.Forms.ComboBox()
         Me.PBLogo = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.MainBalance = New System.Windows.Forms.Label()
+        Me.TossBalance = New System.Windows.Forms.Label()
         Me.PBMoney = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BtnFlip = New System.Windows.Forms.Button()
@@ -47,7 +47,7 @@ Partial Class TossCoin
         Me.ControlPanel.Controls.Add(Me.CBBet)
         Me.ControlPanel.Controls.Add(Me.PBLogo)
         Me.ControlPanel.Controls.Add(Me.Label1)
-        Me.ControlPanel.Controls.Add(Me.MainBalance)
+        Me.ControlPanel.Controls.Add(Me.TossBalance)
         Me.ControlPanel.Controls.Add(Me.PBMoney)
         Me.ControlPanel.Location = New System.Drawing.Point(-9, -1)
         Me.ControlPanel.Name = "ControlPanel"
@@ -86,15 +86,15 @@ Partial Class TossCoin
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Enter your bet here:"
         '
-        'MainBalance
+        'TossBalance
         '
-        Me.MainBalance.AutoSize = True
-        Me.MainBalance.BackColor = System.Drawing.Color.Transparent
-        Me.MainBalance.Font = New System.Drawing.Font("Bahnschrift", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MainBalance.Location = New System.Drawing.Point(388, 16)
-        Me.MainBalance.Name = "MainBalance"
-        Me.MainBalance.Size = New System.Drawing.Size(0, 23)
-        Me.MainBalance.TabIndex = 7
+        Me.TossBalance.AutoSize = True
+        Me.TossBalance.BackColor = System.Drawing.Color.Transparent
+        Me.TossBalance.Font = New System.Drawing.Font("Bahnschrift", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TossBalance.Location = New System.Drawing.Point(388, 16)
+        Me.TossBalance.Name = "TossBalance"
+        Me.TossBalance.Size = New System.Drawing.Size(0, 23)
+        Me.TossBalance.TabIndex = 7
         '
         'PBMoney
         '
@@ -105,6 +105,9 @@ Partial Class TossCoin
         Me.PBMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PBMoney.TabIndex = 6
         Me.PBMoney.TabStop = False
+        '
+        'Timer1
+        '
         '
         'BtnFlip
         '
@@ -186,7 +189,7 @@ Partial Class TossCoin
     End Sub
 
     Friend WithEvents ControlPanel As Panel
-    Friend WithEvents MainBalance As Label
+    Friend WithEvents TossBalance As Label
     Friend WithEvents PBMoney As PictureBox
     Friend WithEvents PBLogo As PictureBox
     Friend WithEvents Label1 As Label

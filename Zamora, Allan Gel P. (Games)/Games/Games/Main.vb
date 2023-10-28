@@ -1,4 +1,6 @@
-﻿Public Class Main
+﻿Imports System.Security.Policy
+
+Public Class Main
     Private closingConfirmed As Boolean = False
     Private Sub BackPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         BackPanel.BackColor = Color.FromArgb(100, 0, 0, 0)
@@ -26,9 +28,11 @@
 
 
     Private Sub Game1_Click(sender As Object, e As EventArgs) Handles PBToss.Click, LBToss.Click, game1.Click
+        TossCoin.TossBalance.Text = Welcome.InputValue.ToString()
         TossCoin.Show()
         Me.Hide()
     End Sub
+
 
 
 
