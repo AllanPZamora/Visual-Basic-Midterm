@@ -1,9 +1,14 @@
 ﻿Public Class Jacken
     Private Sub ControlPanel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         ControlPanel.BackColor = Color.FromArgb(100, 0, 0, 0)
+
         PBMoney.Image = My.Resources.bag
         PBLogo.Image = My.Resources.logo
-        CBBet.SelectionLength = 0
+
+        PBRock.Image = My.Resources.rock
+        PBPaper.Image = My.Resources.paper
+        PBScissors.Image = My.Resources.scissors
     End Sub
 
 
@@ -26,4 +31,6 @@
             Main.Show()
         End If
     End Sub
+
+
 End Class
