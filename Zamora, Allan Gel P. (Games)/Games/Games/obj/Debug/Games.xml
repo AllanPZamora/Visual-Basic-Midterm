@@ -22,6 +22,11 @@ Games
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Games.My.Resources.Resources._395296438_843210023931748_1533144144408543016_n">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Games.My.Resources.Resources.backgame">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

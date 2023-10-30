@@ -12,3 +12,4 @@ C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\G
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.Main.resources
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.Welcome.resources
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.TossCoin.resources
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Games)\Games\Games\obj\Debug\Games.Jacken.resources

@@ -25,21 +25,21 @@ Partial Class TossCoin
         Me.components = New System.ComponentModel.Container()
         Me.ControlPanel = New System.Windows.Forms.Panel()
         Me.CBBet = New System.Windows.Forms.ComboBox()
-        Me.PBLogo = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TossBalance = New System.Windows.Forms.Label()
-        Me.PBMoney = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.BtnFlip = New System.Windows.Forms.Button()
         Me.HTChoose = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.PBCom = New System.Windows.Forms.PictureBox()
         Me.PBYou = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.PBLogo = New System.Windows.Forms.PictureBox()
+        Me.PBMoney = New System.Windows.Forms.PictureBox()
         Me.ControlPanel.SuspendLayout()
-        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCom, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBYou, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ControlPanel
@@ -65,16 +65,6 @@ Partial Class TossCoin
         Me.CBBet.Size = New System.Drawing.Size(121, 26)
         Me.CBBet.TabIndex = 10
         '
-        'PBLogo
-        '
-        Me.PBLogo.BackColor = System.Drawing.Color.Transparent
-        Me.PBLogo.Location = New System.Drawing.Point(23, 5)
-        Me.PBLogo.Name = "PBLogo"
-        Me.PBLogo.Size = New System.Drawing.Size(47, 47)
-        Me.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PBLogo.TabIndex = 9
-        Me.PBLogo.TabStop = False
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -95,16 +85,6 @@ Partial Class TossCoin
         Me.TossBalance.Name = "TossBalance"
         Me.TossBalance.Size = New System.Drawing.Size(0, 23)
         Me.TossBalance.TabIndex = 7
-        '
-        'PBMoney
-        '
-        Me.PBMoney.BackColor = System.Drawing.Color.Transparent
-        Me.PBMoney.Location = New System.Drawing.Point(335, 5)
-        Me.PBMoney.Name = "PBMoney"
-        Me.PBMoney.Size = New System.Drawing.Size(47, 47)
-        Me.PBMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PBMoney.TabIndex = 6
-        Me.PBMoney.TabStop = False
         '
         'Timer1
         '
@@ -130,6 +110,17 @@ Partial Class TossCoin
         Me.HTChoose.Size = New System.Drawing.Size(75, 26)
         Me.HTChoose.TabIndex = 4
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(229, 60)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(68, 23)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Choose:"
+        '
         'PBCom
         '
         Me.PBCom.Location = New System.Drawing.Point(326, 125)
@@ -148,16 +139,25 @@ Partial Class TossCoin
         Me.PBYou.TabIndex = 1
         Me.PBYou.TabStop = False
         '
-        'Label2
+        'PBLogo
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(229, 60)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(68, 23)
-        Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Choose:"
+        Me.PBLogo.BackColor = System.Drawing.Color.Transparent
+        Me.PBLogo.Location = New System.Drawing.Point(23, 5)
+        Me.PBLogo.Name = "PBLogo"
+        Me.PBLogo.Size = New System.Drawing.Size(47, 47)
+        Me.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBLogo.TabIndex = 9
+        Me.PBLogo.TabStop = False
+        '
+        'PBMoney
+        '
+        Me.PBMoney.BackColor = System.Drawing.Color.Transparent
+        Me.PBMoney.Location = New System.Drawing.Point(335, 5)
+        Me.PBMoney.Name = "PBMoney"
+        Me.PBMoney.Size = New System.Drawing.Size(47, 47)
+        Me.PBMoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBMoney.TabIndex = 6
+        Me.PBMoney.TabStop = False
         '
         'TossCoin
         '
@@ -179,10 +179,10 @@ Partial Class TossCoin
         Me.Text = "Toss Coin"
         Me.ControlPanel.ResumeLayout(False)
         Me.ControlPanel.PerformLayout()
-        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCom, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBYou, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

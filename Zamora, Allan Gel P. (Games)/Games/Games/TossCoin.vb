@@ -15,24 +15,17 @@ Public Class TossCoin
     End Sub
 
     Private Sub HTChoose_SelectedIndexChanged(sender As Object, e As EventArgs) Handles HTChoose.SelectedIndexChanged
-        Select Case HTChoose.SelectedIndex
-            Case 0
-                PBYou.Image = My.Resources.coin0
-            Case 1
-                PBYou.Image = My.Resources.coin1
-        End Select
+        PBYou.Image = If(HTChoose.SelectedIndex = 0, My.Resources.coin0, My.Resources.coin1)
     End Sub
 
     Private Sub BtnFlip_Click(sender As Object, e As EventArgs) Handles BtnFlip.Click
-        If CBBet.SelectedItem = Nothing Then
-            MsgBox("Please select bet first")
-        ElseIf CBBet.SelectedItem = Nothing Then
-            MsgBox("Please select bet first")
-
+        If CBBet.SelectedItem Is Nothing Then
+            MsgBox("Please select a bet first")
         Else
             If Integer.TryParse(TossBalance.Text, money) Then
-                If CBBet.SelectedItem > money Then
-                    MsgBox("Insuficient amount, please top up")
+                Dim selectedBet As Integer = CInt(CBBet.SelectedItem)
+                If selectedBet > money Then
+                    MsgBox("Insufficient amount, please top up")
                 Else
                     pertick = 0
                     Timer1.Enabled = True
@@ -43,8 +36,6 @@ Public Class TossCoin
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         coincount = random02.Next(0, 2)
         PBCom.Image = Image.FromFile(Path.Combine(Directory.GetCurrentDirectory, "tosscoin", "coin" & coincount & ".png"))
-
-
 
         pertick += 1
 
