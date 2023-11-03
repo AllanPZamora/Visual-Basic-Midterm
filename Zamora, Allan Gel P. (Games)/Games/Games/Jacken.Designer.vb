@@ -30,22 +30,24 @@ Partial Class Jacken
         Me.JackBalance = New System.Windows.Forms.Label()
         Me.PBMoney = New System.Windows.Forms.PictureBox()
         Me.PYou = New System.Windows.Forms.Panel()
+        Me.PBYou = New System.Windows.Forms.PictureBox()
         Me.PCom = New System.Windows.Forms.Panel()
+        Me.PBCom = New System.Windows.Forms.PictureBox()
         Me.PBRock = New System.Windows.Forms.PictureBox()
         Me.PBPaper = New System.Windows.Forms.PictureBox()
         Me.PBScissors = New System.Windows.Forms.PictureBox()
-        Me.PBYou = New System.Windows.Forms.PictureBox()
-        Me.PBCom = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.ControlPanel.SuspendLayout()
         CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PYou.SuspendLayout()
+        CType(Me.PBYou, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PCom.SuspendLayout()
+        CType(Me.PBCom, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBRock, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBPaper, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBScissors, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBYou, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PBCom, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MiddlePanel
@@ -129,6 +131,16 @@ Partial Class Jacken
         Me.PYou.Size = New System.Drawing.Size(125, 125)
         Me.PYou.TabIndex = 15
         '
+        'PBYou
+        '
+        Me.PBYou.BackColor = System.Drawing.Color.Transparent
+        Me.PBYou.Location = New System.Drawing.Point(13, 13)
+        Me.PBYou.Name = "PBYou"
+        Me.PBYou.Size = New System.Drawing.Size(100, 100)
+        Me.PBYou.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBYou.TabIndex = 0
+        Me.PBYou.TabStop = False
+        '
         'PCom
         '
         Me.PCom.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -137,6 +149,16 @@ Partial Class Jacken
         Me.PCom.Name = "PCom"
         Me.PCom.Size = New System.Drawing.Size(125, 125)
         Me.PCom.TabIndex = 16
+        '
+        'PBCom
+        '
+        Me.PBCom.BackColor = System.Drawing.Color.Transparent
+        Me.PBCom.Location = New System.Drawing.Point(13, 13)
+        Me.PBCom.Name = "PBCom"
+        Me.PBCom.Size = New System.Drawing.Size(100, 100)
+        Me.PBCom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBCom.TabIndex = 1
+        Me.PBCom.TabStop = False
         '
         'PBRock
         '
@@ -165,23 +187,27 @@ Partial Class Jacken
         Me.PBScissors.TabIndex = 19
         Me.PBScissors.TabStop = False
         '
-        'PBYou
+        'Label2
         '
-        Me.PBYou.BackColor = System.Drawing.Color.Transparent
-        Me.PBYou.Location = New System.Drawing.Point(13, 13)
-        Me.PBYou.Name = "PBYou"
-        Me.PBYou.Size = New System.Drawing.Size(100, 100)
-        Me.PBYou.TabIndex = 0
-        Me.PBYou.TabStop = False
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiBold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(110, 63)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(50, 29)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "You"
         '
-        'PBCom
+        'Label3
         '
-        Me.PBCom.BackColor = System.Drawing.Color.Transparent
-        Me.PBCom.Location = New System.Drawing.Point(13, 13)
-        Me.PBCom.Name = "PBCom"
-        Me.PBCom.Size = New System.Drawing.Size(100, 100)
-        Me.PBCom.TabIndex = 1
-        Me.PBCom.TabStop = False
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift SemiBold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(343, 63)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(119, 29)
+        Me.Label3.TabIndex = 20
+        Me.Label3.Text = "Computer"
         '
         'Jacken
         '
@@ -189,6 +215,8 @@ Partial Class Jacken
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SkyBlue
         Me.ClientSize = New System.Drawing.Size(514, 321)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PBScissors)
         Me.Controls.Add(Me.PBPaper)
         Me.Controls.Add(Me.PBRock)
@@ -206,13 +234,14 @@ Partial Class Jacken
         CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PYou.ResumeLayout(False)
+        CType(Me.PBYou, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PCom.ResumeLayout(False)
+        CType(Me.PBCom, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBRock, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBPaper, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBScissors, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBYou, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PBCom, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MiddlePanel As Panel
@@ -229,4 +258,6 @@ Partial Class Jacken
     Friend WithEvents PBScissors As PictureBox
     Friend WithEvents PBYou As PictureBox
     Friend WithEvents PBCom As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

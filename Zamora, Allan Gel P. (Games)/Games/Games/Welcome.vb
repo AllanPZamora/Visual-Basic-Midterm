@@ -21,6 +21,8 @@
                 TxtInput.Text = ""
             Else
                 Main.MainBalance.Text = InputValue.ToString()
+                Jacken.JackBalance.Text = InputValue.ToString()
+                TossCoin.TossBalance.Text = InputValue.ToString()
                 TxtInput.Hide()
                 btnStart.Hide()
                 Label3.Hide()

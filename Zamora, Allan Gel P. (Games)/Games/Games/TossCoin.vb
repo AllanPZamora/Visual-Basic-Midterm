@@ -71,6 +71,7 @@ Public Class TossCoin
                             money += 1000
                     End Select
                     TossBalance.Text = money.ToString()
+                    Jacken.JackBalance.Text = money.ToString()
                     Main.MainBalance.Text = money.ToString()
                 End If
             Else
@@ -99,7 +100,9 @@ Public Class TossCoin
                             money -= 1000
                     End Select
                     TossBalance.Text = money.ToString()
-                    Main.MainBalance.text  = money.ToString()
+                    Jacken.JackBalance.Text = money.ToString()
+                    Main.MainBalance.Text = money.ToString()
+
                 End If
             End If
         End If
@@ -113,6 +116,5 @@ Public Class TossCoin
             Main.Show()
         End If
     End Sub
-
 
 End Class
