@@ -33,7 +33,7 @@ Partial Class Main
         Me.CBBrand = New System.Windows.Forms.ComboBox()
         Me.CBCar = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Proceed = New System.Windows.Forms.Button()
         Me.LBLMoney = New System.Windows.Forms.Label()
         Me.StatsPanel.SuspendLayout()
         CType(Me.PBStats, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,7 +118,7 @@ Partial Class Main
         'PBLogo
         '
         Me.PBLogo.BackColor = System.Drawing.Color.Transparent
-        Me.PBLogo.Location = New System.Drawing.Point(19, 20)
+        Me.PBLogo.Location = New System.Drawing.Point(34, 20)
         Me.PBLogo.Name = "PBLogo"
         Me.PBLogo.Size = New System.Drawing.Size(130, 100)
         Me.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -148,7 +148,7 @@ Partial Class Main
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.Proceed)
         Me.Panel1.Controls.Add(Me.LBLMoney)
         Me.Panel1.Controls.Add(Me.CBCar)
         Me.Panel1.Controls.Add(Me.CBBrand)
@@ -157,15 +157,15 @@ Partial Class Main
         Me.Panel1.Size = New System.Drawing.Size(307, 80)
         Me.Panel1.TabIndex = 6
         '
-        'Button1
+        'Proceed
         '
-        Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
-        Me.Button1.Location = New System.Drawing.Point(189, 45)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 26)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Proceed"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Proceed.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
+        Me.Proceed.Location = New System.Drawing.Point(189, 45)
+        Me.Proceed.Name = "Proceed"
+        Me.Proceed.Size = New System.Drawing.Size(100, 26)
+        Me.Proceed.TabIndex = 7
+        Me.Proceed.Text = "Proceed"
+        Me.Proceed.UseVisualStyleBackColor = True
         '
         'LBLMoney
         '
@@ -173,9 +173,8 @@ Partial Class Main
         Me.LBLMoney.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
         Me.LBLMoney.Location = New System.Drawing.Point(33, 50)
         Me.LBLMoney.Name = "LBLMoney"
-        Me.LBLMoney.Size = New System.Drawing.Size(134, 18)
+        Me.LBLMoney.Size = New System.Drawing.Size(0, 18)
         Me.LBLMoney.TabIndex = 6
-        Me.LBLMoney.Text = "Bahnschrift, 11.25pt"
         '
         'Main
         '
@@ -183,9 +182,9 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Midterm.My.Resources.Resources.Untitled_design_20231104_223232_0000
         Me.ClientSize = New System.Drawing.Size(764, 436)
+        Me.Controls.Add(Me.PBLogo)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatsPanel)
-        Me.Controls.Add(Me.PBLogo)
         Me.Controls.Add(Me.PBCar)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -216,5 +215,5 @@ Partial Class Main
     Friend WithEvents CBCar As ComboBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents LBLMoney As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Proceed As Button
 End Class

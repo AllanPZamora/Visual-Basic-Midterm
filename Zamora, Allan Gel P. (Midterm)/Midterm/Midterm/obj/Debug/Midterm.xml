@@ -22,11 +22,6 @@ Midterm
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Midterm.My.Resources.Resources.t0">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Midterm.My.Resources.Resources.Untitled_design_20231104_223232_0000">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

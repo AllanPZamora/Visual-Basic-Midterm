@@ -10,3 +10,4 @@ C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Midterm)\Midte
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Midterm)\Midterm\Midterm\obj\Debug\Midterm.xml
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Midterm)\Midterm\Midterm\obj\Debug\Midterm.pdb
 C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Midterm)\Midterm\Midterm\obj\Debug\Midterm.Main.resources
+C:\Users\ALLAN\Desktop\Visual-Basic-Midterm\Zamora, Allan Gel P. (Midterm)\Midterm\Midterm\obj\Debug\Midterm.Checkout.resources
