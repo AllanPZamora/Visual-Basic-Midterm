@@ -264,12 +264,6 @@ Public Class Jacken
             PBCom.Image = Nothing
         End If
     End Sub
-
-
-
-
-
-
     Private Sub Jacken_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
 
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to close?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
@@ -279,6 +273,5 @@ Public Class Jacken
             Main.Show()
         End If
     End Sub
-
 
 End Class

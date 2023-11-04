@@ -37,7 +37,6 @@
         End If
     End Sub
 
-
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.ProgLoad.Value = ProgLoad.Value + 2
         If ProgLoad.Value >= 100 Then
