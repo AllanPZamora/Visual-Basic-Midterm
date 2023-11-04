@@ -22,7 +22,7 @@ Midterm
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
-<member name="P:Midterm.My.Resources.Resources.toyota0">
+<member name="P:Midterm.My.Resources.Resources.t0">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

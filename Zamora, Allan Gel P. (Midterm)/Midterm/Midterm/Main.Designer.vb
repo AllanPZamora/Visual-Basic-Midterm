@@ -29,16 +29,16 @@ Partial Class Main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PBCar = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PBLogo = New System.Windows.Forms.PictureBox()
         Me.CBBrand = New System.Windows.Forms.ComboBox()
         Me.CBCar = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.LBLMoney = New System.Windows.Forms.Label()
         Me.StatsPanel.SuspendLayout()
         CType(Me.PBStats, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBCar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,7 +48,7 @@ Partial Class Main
         Me.StatsPanel.Controls.Add(Me.Label4)
         Me.StatsPanel.Controls.Add(Me.Label3)
         Me.StatsPanel.Controls.Add(Me.Label2)
-        Me.StatsPanel.Location = New System.Drawing.Point(474, 335)
+        Me.StatsPanel.Location = New System.Drawing.Point(474, 329)
         Me.StatsPanel.Name = "StatsPanel"
         Me.StatsPanel.Size = New System.Drawing.Size(252, 80)
         Me.StatsPanel.TabIndex = 0
@@ -107,27 +107,30 @@ Partial Class Main
         '
         'PBCar
         '
-        Me.PBCar.Location = New System.Drawing.Point(223, 111)
+        Me.PBCar.BackColor = System.Drawing.Color.Transparent
+        Me.PBCar.Location = New System.Drawing.Point(196, 132)
         Me.PBCar.Name = "PBCar"
-        Me.PBCar.Size = New System.Drawing.Size(329, 209)
+        Me.PBCar.Size = New System.Drawing.Size(387, 236)
         Me.PBCar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PBCar.TabIndex = 2
         Me.PBCar.TabStop = False
         '
-        'PictureBox2
+        'PBLogo
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(34, 20)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(129, 97)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 3
-        Me.PictureBox2.TabStop = False
+        Me.PBLogo.BackColor = System.Drawing.Color.Transparent
+        Me.PBLogo.Location = New System.Drawing.Point(19, 20)
+        Me.PBLogo.Name = "PBLogo"
+        Me.PBLogo.Size = New System.Drawing.Size(130, 100)
+        Me.PBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PBLogo.TabIndex = 3
+        Me.PBLogo.TabStop = False
         '
         'CBBrand
         '
         Me.CBBrand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBBrand.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBBrand.FormattingEnabled = True
+        Me.CBBrand.Items.AddRange(New Object() {"Toyota", "Honda", "Nissan", "Kia"})
         Me.CBBrand.Location = New System.Drawing.Point(16, 13)
         Me.CBBrand.Name = "CBBrand"
         Me.CBBrand.Size = New System.Drawing.Size(99, 26)
@@ -146,23 +149,13 @@ Partial Class Main
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.LBLMoney)
         Me.Panel1.Controls.Add(Me.CBCar)
         Me.Panel1.Controls.Add(Me.CBBrand)
-        Me.Panel1.Location = New System.Drawing.Point(34, 335)
+        Me.Panel1.Location = New System.Drawing.Point(34, 329)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(307, 80)
         Me.Panel1.TabIndex = 6
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
-        Me.Label5.Location = New System.Drawing.Point(33, 50)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(134, 18)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Bahnschrift, 11.25pt"
         '
         'Button1
         '
@@ -174,6 +167,16 @@ Partial Class Main
         Me.Button1.Text = "Proceed"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'LBLMoney
+        '
+        Me.LBLMoney.AutoSize = True
+        Me.LBLMoney.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
+        Me.LBLMoney.Location = New System.Drawing.Point(33, 50)
+        Me.LBLMoney.Name = "LBLMoney"
+        Me.LBLMoney.Size = New System.Drawing.Size(134, 18)
+        Me.LBLMoney.TabIndex = 6
+        Me.LBLMoney.Text = "Bahnschrift, 11.25pt"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,10 +184,10 @@ Partial Class Main
         Me.BackgroundImage = Global.Midterm.My.Resources.Resources.Untitled_design_20231104_223232_0000
         Me.ClientSize = New System.Drawing.Size(764, 436)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.StatsPanel)
+        Me.Controls.Add(Me.PBLogo)
         Me.Controls.Add(Me.PBCar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.StatsPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -193,7 +196,7 @@ Partial Class Main
         Me.StatsPanel.PerformLayout()
         CType(Me.PBStats, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PBCar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -208,10 +211,10 @@ Partial Class Main
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents PBCar As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PBLogo As PictureBox
     Friend WithEvents CBBrand As ComboBox
     Friend WithEvents CBCar As ComboBox
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label5 As Label
+    Friend WithEvents LBLMoney As Label
     Friend WithEvents Button1 As Button
 End Class
