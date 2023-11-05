@@ -33,6 +33,9 @@ Partial Class Main
         Me.CBBrand = New System.Windows.Forms.ComboBox()
         Me.CBCar = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TxtInput = New System.Windows.Forms.TextBox()
         Me.Proceed = New System.Windows.Forms.Button()
         Me.LBLMoney = New System.Windows.Forms.Label()
         Me.StatsPanel.SuspendLayout()
@@ -133,7 +136,7 @@ Partial Class Main
         Me.CBBrand.Items.AddRange(New Object() {"Toyota", "Honda", "Nissan", "Kia"})
         Me.CBBrand.Location = New System.Drawing.Point(16, 13)
         Me.CBBrand.Name = "CBBrand"
-        Me.CBBrand.Size = New System.Drawing.Size(99, 26)
+        Me.CBBrand.Size = New System.Drawing.Size(131, 26)
         Me.CBBrand.TabIndex = 4
         '
         'CBCar
@@ -141,28 +144,61 @@ Partial Class Main
         Me.CBCar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.CBCar.Font = New System.Drawing.Font("Bahnschrift", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CBCar.FormattingEnabled = True
-        Me.CBCar.Location = New System.Drawing.Point(132, 13)
+        Me.CBCar.Location = New System.Drawing.Point(153, 13)
         Me.CBCar.Name = "CBCar"
-        Me.CBCar.Size = New System.Drawing.Size(157, 26)
+        Me.CBCar.Size = New System.Drawing.Size(188, 26)
         Me.CBCar.TabIndex = 5
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.TxtInput)
         Me.Panel1.Controls.Add(Me.Proceed)
         Me.Panel1.Controls.Add(Me.LBLMoney)
         Me.Panel1.Controls.Add(Me.CBCar)
         Me.Panel1.Controls.Add(Me.CBBrand)
         Me.Panel1.Location = New System.Drawing.Point(34, 329)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(307, 80)
+        Me.Panel1.Size = New System.Drawing.Size(354, 80)
         Me.Panel1.TabIndex = 6
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Bahnschrift SemiLight Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(5, 44)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(57, 23)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Price ₱:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Light Condensed", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(151, 49)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(77, 18)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Year(s) to Pay:"
+        '
+        'TxtInput
+        '
+        Me.TxtInput.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
+        Me.TxtInput.Location = New System.Drawing.Point(232, 45)
+        Me.TxtInput.Name = "TxtInput"
+        Me.TxtInput.Size = New System.Drawing.Size(28, 26)
+        Me.TxtInput.TabIndex = 8
         '
         'Proceed
         '
         Me.Proceed.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
-        Me.Proceed.Location = New System.Drawing.Point(189, 45)
+        Me.Proceed.Location = New System.Drawing.Point(266, 45)
         Me.Proceed.Name = "Proceed"
-        Me.Proceed.Size = New System.Drawing.Size(100, 26)
+        Me.Proceed.Size = New System.Drawing.Size(75, 26)
         Me.Proceed.TabIndex = 7
         Me.Proceed.Text = "Proceed"
         Me.Proceed.UseVisualStyleBackColor = True
@@ -170,10 +206,11 @@ Partial Class Main
         'LBLMoney
         '
         Me.LBLMoney.AutoSize = True
-        Me.LBLMoney.Font = New System.Drawing.Font("Bahnschrift", 11.25!)
-        Me.LBLMoney.Location = New System.Drawing.Point(33, 50)
+        Me.LBLMoney.BackColor = System.Drawing.Color.Transparent
+        Me.LBLMoney.Font = New System.Drawing.Font("Bahnschrift SemiLight Condensed", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBLMoney.Location = New System.Drawing.Point(62, 44)
         Me.LBLMoney.Name = "LBLMoney"
-        Me.LBLMoney.Size = New System.Drawing.Size(0, 18)
+        Me.LBLMoney.Size = New System.Drawing.Size(0, 23)
         Me.LBLMoney.TabIndex = 6
         '
         'Main
@@ -216,4 +253,7 @@ Partial Class Main
     Friend WithEvents Panel1 As Panel
     Friend WithEvents LBLMoney As Label
     Friend WithEvents Proceed As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TxtInput As TextBox
+    Friend WithEvents Label6 As Label
 End Class
