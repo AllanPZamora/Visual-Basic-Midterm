@@ -129,142 +129,45 @@ Public Class Main
         Dim totalprice As Integer
         Dim annualsale As Integer
         Dim monthly As Integer
+        Dim annualSalePercentage As Double
 
-        If TxtInput.Text = Nothing Then
+        If TxtInput.Text = "" Then
             MsgBox("Please add years to pay")
-
-
-        ElseIf CBBrand.SelectedIndex = "0" Then ' toyota
-
-            If CBCar.SelectedIndex = "0" Then
-
-                annualsale = Price * 0.1
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-            ElseIf CBCar.SelectedIndex = "1" Then
-
-                annualsale = Price * 0.1
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            ElseIf CBCar.SelectedIndex = "2" Then
-
-                annualsale = Price * 0.1
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            End If
-
-        ElseIf CBBrand.SelectedIndex = "1" Then 'honda
-
-            If CBCar.SelectedIndex = "0" Then
-
-                annualsale = Price * 0.11
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-            ElseIf CBCar.SelectedIndex = "1" Then
-
-                annualsale = Price * 0.11
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            End If
-
-        ElseIf CBBrand.SelectedIndex = "2" Then 'nissan
-
-            If CBCar.SelectedIndex = "0" Then
-
-                annualsale = Price * 0.09
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            ElseIf CBCar.SelectedIndex = "1" Then
-
-                annualsale = Price * 0.09
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            End If
-
-        ElseIf CBBrand.SelectedIndex = "3" Then 'kia
-
-            If CBCar.SelectedIndex = "0" Then
-
-                annualsale = Price * 0.08
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            ElseIf CBCar.SelectedIndex = "1" Then
-
-                annualsale = Price * 0.08
-                total = annualsale * TxtInput.Text
-                totalprice = total + Price
-                monthly = (totalprice / (TxtInput.Text * 12))
-                Checkout.TxtFixedPrice.Text = Price
-                Checkout.TxtYear.Text = TxtInput.Text
-                Checkout.TxtTotalPrice.Text = totalprice
-                Checkout.TxtMonthly.Text = monthly
-                Checkout.Show()
-                Me.Hide()
-
-            End If
+            Exit Sub
         End If
+
+        Select Case CBBrand.SelectedIndex
+            Case 0 ' Toyota
+                annualSalePercentage = 0.1
+            Case 1 ' Honda
+                annualSalePercentage = 0.11
+            Case 2 ' Nissan
+                annualSalePercentage = 0.09
+            Case 3 ' Kia
+                annualSalePercentage = 0.08
+            Case Else
+                MsgBox("Please select a brand")
+                Exit Sub
+        End Select
+
+        Dim selectedCarIndex As Integer = CBCar.SelectedIndex
+
+        If selectedCarIndex < 0 Then
+            MsgBox("Please select a car")
+            Exit Sub
+        End If
+
+        annualsale = Price * annualSalePercentage
+        total = annualsale * TxtInput.Text
+        totalprice = total + Price
+        monthly = totalprice / (TxtInput.Text * 12)
+
+        Checkout.TxtFixedPrice.Text = Price
+        Checkout.TxtYear.Text = TxtInput.Text
+        Checkout.TxtTotalPrice.Text = totalprice
+        Checkout.TxtMonthly.Text = monthly
+        Checkout.Show()
+        Me.Hide()
     End Sub
 
 End Class
