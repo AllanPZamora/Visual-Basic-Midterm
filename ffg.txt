@@ -1,3 +1,18 @@
+   Private Sub BtnFlip_Click(sender As Object, e As EventArgs) Handles BtnFlip.Click
+        If CBBet.SelectedItem Is Nothing Then
+            MsgBox("Please select a bet first")
+        Else
+            If Integer.TryParse(TossBalance.Text, money) Then
+                Dim selectedBet As Integer = CInt(CBBet.SelectedItem)
+                If selectedBet > money Then
+                    MsgBox("Insufficient amount, please top up")
+                Else
+                    pertick = 0
+                    Timer1.Enabled = True
+                End If
+            End If
+        End If
+    End Sub
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         coincount = random02.Next(0, 2)
         PBCom.Image = Image.FromFile(Path.Combine(Directory.GetCurrentDirectory, "tosscoin", "coin" & coincount & ".png"))
