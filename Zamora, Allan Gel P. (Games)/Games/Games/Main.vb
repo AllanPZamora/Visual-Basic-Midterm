@@ -27,10 +27,11 @@ Public Class Main
         Me.Hide()
     End Sub
 
-    'Private Sub Game3_Click(sender As Object, e As EventArgs) Handles PBSlots.Click, LBSlots.Click, game3.Click
-    '    Slots.Show()
-    '    Me.Hide()
-    'End Sub
+    Private Sub Game3_Click(sender As Object, e As EventArgs) Handles PBSlots.Click, LBSlots.Click, game3.Click
+        Slots.SlotBalance.Text = MainBalance.Text
+        Slots.Show()
+        Me.Hide()
+    End Sub
 
     ''Private Sub Game4_Click(sender As Object, e As EventArgs) Handles PBL9.Click, LBL9.Click, game4.Click
     ''Lucky9.Show()
