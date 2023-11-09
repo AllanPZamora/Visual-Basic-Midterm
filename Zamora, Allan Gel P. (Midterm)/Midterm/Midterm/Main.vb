@@ -131,7 +131,7 @@ Public Class Main
         Dim monthly As Integer
         Dim annualSalePercentage As Double
 
-        If TxtInput.Text = "" Then
+        If TxtInput.Text = Nothing Then
             MsgBox("Please add years to pay")
             Exit Sub
         End If
