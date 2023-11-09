@@ -23,6 +23,7 @@ Partial Class Slots
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.ControlPanel = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.PBLogo = New System.Windows.Forms.PictureBox()
         Me.SlotBalance = New System.Windows.Forms.Label()
         Me.PBMoney = New System.Windows.Forms.PictureBox()
@@ -32,8 +33,6 @@ Partial Class Slots
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.ControlPanel.SuspendLayout()
         CType(Me.PBLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PBMoney, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +53,17 @@ Partial Class Slots
         Me.ControlPanel.Name = "ControlPanel"
         Me.ControlPanel.Size = New System.Drawing.Size(565, 56)
         Me.ControlPanel.TabIndex = 15
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(76, 10)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(146, 39)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "BetStation"
         '
         'PBLogo
         '
@@ -88,9 +98,9 @@ Partial Class Slots
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Bahnschrift", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(219, 313)
+        Me.Button1.Location = New System.Drawing.Point(226, 305)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 32)
+        Me.Button1.Size = New System.Drawing.Size(79, 35)
         Me.Button1.TabIndex = 17
         Me.Button1.Text = "Spin"
         Me.Button1.UseVisualStyleBackColor = True
@@ -99,7 +109,7 @@ Partial Class Slots
         '
         Me.Panel1.BackColor = System.Drawing.Color.DarkViolet
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(43, 110)
+        Me.Panel1.Location = New System.Drawing.Point(43, 95)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(432, 189)
         Me.Panel1.TabIndex = 18
@@ -142,34 +152,12 @@ Partial Class Slots
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(78, 69)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(123, 28)
-        Me.Label2.TabIndex = 19
-        Me.Label2.Text = "JACKPOT :"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(76, 10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(146, 39)
-        Me.Label1.TabIndex = 20
-        Me.Label1.Text = "BetStation"
-        '
         'Slots
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SkyBlue
         Me.ClientSize = New System.Drawing.Size(514, 361)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ControlPanel)
@@ -188,7 +176,6 @@ Partial Class Slots
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -202,6 +189,5 @@ Partial Class Slots
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
 End Class
