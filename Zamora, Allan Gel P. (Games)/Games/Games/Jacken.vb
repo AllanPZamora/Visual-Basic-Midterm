@@ -26,6 +26,10 @@ Public Class Jacken
 
         PBCom.Image = Image.FromFile(Directory.GetCurrentDirectory & "\handr\handr" & pbenemyValue & ".png")
 
+        If Not HasSufficientFunds() Then
+            MsgBox("Insufficient funds. Please top up.")
+            Exit Sub
+        End If
 
         If userChoice = pbenemyValue Then
             MsgBox("It's a tie!")
@@ -108,7 +112,10 @@ Public Class Jacken
         Dim choices As String() = {"Rock", "Scissors", "Paper"}
 
         PBCom.Image = Image.FromFile(Directory.GetCurrentDirectory & "\handr\handr" & pbenemyValue & ".png")
-
+        If Not HasSufficientFunds() Then
+            MsgBox("Insufficient funds. Please top up.")
+            Exit Sub
+        End If
 
         If userChoice = pbenemyValue Then
             MsgBox("It's a tie!")
@@ -191,7 +198,10 @@ Public Class Jacken
         Dim choices As String() = {"Rock", "Scissors", "Paper"}
 
         PBCom.Image = Image.FromFile(Directory.GetCurrentDirectory & "\handr\handr" & pbenemyValue & ".png")
-
+        If Not HasSufficientFunds() Then
+            MsgBox("Insufficient funds. Please top up.")
+            Exit Sub
+        End If
 
         If userChoice = pbenemyValue Then
             MsgBox("It's a tie!")
@@ -264,6 +274,22 @@ Public Class Jacken
             PBCom.Image = Nothing
         End If
     End Sub
+
+    Private Function HasSufficientFunds() As Boolean
+        Dim betAmount As Integer
+
+        If Integer.TryParse(JackBalance.Text, money) AndAlso Integer.TryParse(CBBet.SelectedItem.ToString(), betAmount) Then
+            If money < betAmount Then
+                Return False
+            End If
+        Else
+            MsgBox("Invalid balance or bet amount.")
+            Return False
+        End If
+
+        Return True
+    End Function
+
     Private Sub Jacken_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
 
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to close?", "Confirm Close", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
