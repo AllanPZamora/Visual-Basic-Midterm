@@ -102,11 +102,14 @@ Partial Class Main
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(666, 20)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Harlow Solid Italic", 24.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Crimson
+        Me.Label1.Location = New System.Drawing.Point(613, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(139, 40)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Car Loan"
         '
         'PBCar
         '
@@ -225,6 +228,7 @@ Partial Class Main
         Me.Controls.Add(Me.PBCar)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Show Room"

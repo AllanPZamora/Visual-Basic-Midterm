@@ -162,10 +162,10 @@ Public Class Main
         totalprice = total + Price
         monthly = totalprice / (TxtInput.Text * 12)
 
-        Checkout.TxtFixedPrice.Text = Price
+        Checkout.TxtFixedPrice.Text = Format(Price, "₱ #,##0.00")
         Checkout.TxtYear.Text = TxtInput.Text
-        Checkout.TxtTotalPrice.Text = totalprice
-        Checkout.TxtMonthly.Text = monthly
+        Checkout.TxtTotalPrice.Text = Format(totalprice, "₱ #,##0.00")
+        Checkout.TxtMonthly.Text = Format(monthly, "₱ #,##0.00")
         Checkout.Show()
         Me.Hide()
     End Sub

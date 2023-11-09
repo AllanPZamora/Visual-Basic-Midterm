@@ -40,6 +40,7 @@ Partial Class Checkout
         Me.TxtFixedPrice.Font = New System.Drawing.Font("Bahnschrift SemiBold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TxtFixedPrice.Location = New System.Drawing.Point(178, 75)
         Me.TxtFixedPrice.Name = "TxtFixedPrice"
+        Me.TxtFixedPrice.ReadOnly = True
         Me.TxtFixedPrice.Size = New System.Drawing.Size(191, 22)
         Me.TxtFixedPrice.TabIndex = 0
         '
@@ -48,6 +49,7 @@ Partial Class Checkout
         Me.TxtYear.Font = New System.Drawing.Font("Bahnschrift SemiBold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TxtYear.Location = New System.Drawing.Point(178, 101)
         Me.TxtYear.Name = "TxtYear"
+        Me.TxtYear.ReadOnly = True
         Me.TxtYear.Size = New System.Drawing.Size(191, 22)
         Me.TxtYear.TabIndex = 1
         '
@@ -56,6 +58,7 @@ Partial Class Checkout
         Me.TxtInt.Font = New System.Drawing.Font("Bahnschrift SemiBold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TxtInt.Location = New System.Drawing.Point(178, 127)
         Me.TxtInt.Name = "TxtInt"
+        Me.TxtInt.ReadOnly = True
         Me.TxtInt.Size = New System.Drawing.Size(191, 22)
         Me.TxtInt.TabIndex = 2
         '
@@ -64,6 +67,7 @@ Partial Class Checkout
         Me.TxtTotalPrice.Font = New System.Drawing.Font("Bahnschrift SemiBold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TxtTotalPrice.Location = New System.Drawing.Point(178, 153)
         Me.TxtTotalPrice.Name = "TxtTotalPrice"
+        Me.TxtTotalPrice.ReadOnly = True
         Me.TxtTotalPrice.Size = New System.Drawing.Size(191, 22)
         Me.TxtTotalPrice.TabIndex = 3
         '
@@ -72,6 +76,7 @@ Partial Class Checkout
         Me.TxtMonthly.Font = New System.Drawing.Font("Bahnschrift SemiBold", 9.0!, System.Drawing.FontStyle.Bold)
         Me.TxtMonthly.Location = New System.Drawing.Point(178, 179)
         Me.TxtMonthly.Name = "TxtMonthly"
+        Me.TxtMonthly.ReadOnly = True
         Me.TxtMonthly.Size = New System.Drawing.Size(191, 22)
         Me.TxtMonthly.TabIndex = 4
         '
@@ -141,7 +146,7 @@ Partial Class Checkout
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(95, 39)
         Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Buy Again"
+        Me.Button1.Text = "Reset"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Checkout
